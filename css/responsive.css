@@ -1,0 +1,282 @@
+/*============================================
+               navbar
+=============================================== */
+
+@media (max-width:992px) {
+	.navbar {
+		background-color: rgb(10, 179, 156);
+		width: 100%;
+	}
+	.dropdown-menu {
+		margin: 0.125rem -120px 0;
+	}
+	.flex-row i {
+		font-size: 20px;
+	}
+}
+
+
+/*============================================
+               for all common header
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.common-header h2 {
+		font-size: 1.5rem;
+	}
+	.common-header span i {
+		font-size: 25px;
+	}
+	.common-header p {
+		font-size: .9rem;
+	}
+	.background-text h1 {
+		font-size: 1.4rem;
+	}
+	.background-text h5 {
+		font-size: 1.2rem;
+	}
+	.navbar-light .navbar-brand {
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (min-width:780px) and (max-width: 1024px) {
+	.flex-row i {
+		font-size: 20px;
+		right: 20%;
+	}
+}
+
+
+/*============================================
+                company-profile
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.tab-row {
+		margin-top: 2.5rem;
+	}
+	.nav-pills a {
+		font-size: 1rem;
+	}
+	.tab-pane p {
+		font-size: .9rem;
+	}
+	.tab-pane h4 {
+		font-size: 1.1rem;
+	}
+	.tab-pane span i {
+		font-size: 80px;
+	}
+	#about {
+		padding: 100px 0px 10px;
+		background: #f8f7f7;
+	}
+}
+
+
+/*============================================
+                   service
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.service-box p {
+		font-size: .9rem;
+	}
+	.service-box h4 {
+		font-size: 1.1rem;
+	}
+	.service-container {
+		padding-top: 2.5rem;
+	}
+	.service-content {
+		margin-top: 10px;
+	}
+}
+
+
+/*============================================
+               product details
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.product-head {
+		padding-top: 2.5rem;
+	}
+	.product-bottom h3 {
+		font-size: 18px;
+	}
+	.product-bottom h5 {
+		font-size: 13px;
+		padding-bottom: 10px;
+	}
+	.product-bottom p {
+		font-size: .9rem;
+	}
+	.book-nowgif {
+		height: 110px;
+		width: 110px;
+	}
+	.book-icon i {
+		padding: 13px;
+		font-size: 25px;
+		cursor: pointer;
+	}
+}
+
+
+/*============================================
+             team
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.team-container {
+		padding-top: 2.5rem;
+	}
+	.left-heading h5 {
+		font-size: 22px;
+	}
+	.left-heading h4 {
+		font-size: 25px;
+	}
+	.text-left {
+		font-size: .9rem;
+	}
+}
+
+
+/*============================================
+               footer
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.footer-left h4,
+	.footer-right h4,
+	.footer-middle h4 {
+		font-size: 1.2rem;
+	}
+	.footer-right h1 {
+		font-size: 1.8rem;
+	}
+	.footer-right p {
+		font-size: .9rem;
+	}
+}
+
+
+/*============================================
+               scroll
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.scrollup {
+		bottom: 150px;
+		padding: 5px 10px;
+	}
+}
+
+
+/*============================================
+                    row
+=============================================== */
+
+@media only screen and (max-width: 1800px) {
+	.row {
+		margin-right: -110px;
+		margin-left: -110px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.row {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.container-fluid {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+
+/*============================================
+                    breadcamp text
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.breadcrumb-item {
+		display: inline;
+		color: white;
+		font-size: 1.2rem;
+	}
+	.breadcrumb>h3 {
+		font-size: 2rem;
+		font-weight: bolder;
+	}
+}
+
+
+/*============================================
+                    contact
+=============================================== */
+
+@media only screen and (min-width:200px) and (max-width: 780px) {
+	.common-header h3 {
+		font-size: 1.3rem;
+	}
+	.contact-box span i {
+		padding: 10px 12px;
+		background-color: #0e8b7b;
+		font-size: 30px;
+	}
+	.contact-box span:hover i {
+		padding: 10px 12px;
+		font-size: 30px;
+	}
+	.contact-box h4 {
+		font-size: 1.2rem;
+	}
+	.contact-box p {
+		font-size: .9rem;
+	}
+	.contact-box {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		box-sizing: border-box;
+		height: 200px;
+		width: 100%;
+	}
+	.contact-right .row {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	#contact-form .row {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	#contact-form {
+		padding: 80px 0px 30px;
+	}
+	#contact-right {
+		padding: 40px 20px;
+	}
+	#contact-right h4 {
+		font-size: 1.2rem;
+	}
+	#contact-right p {
+		font-size: .9rem;
+	}
+	#contact-right form .form-control.right {
+		font-size: 12px;
+	}
+	.btn-submit {
+		background-color: #1db891;
+		padding: 4px 25px;
+		border: 1px solid transparent;
+		border-radius: 25px;
+		font-size: 15px;
+		margin-top: 5px;
+		color: white;
+	}
+}
