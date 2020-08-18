@@ -713,7 +713,7 @@ input:focus {
              product
 =============================================== */
 #product-detail {
-	padding: 80px 0px;
+	padding: 80px 0px 0px;
 	background: #f8f7f7;
 }
 .image-resize img {
@@ -1193,9 +1193,9 @@ ul.page-catagories a:hover li {
 	box-shadow: none;
 }
 
-/* ============================================
+/*============================================
            breadcrumb
-=============================================== */
+===============================================*/
 .breadcrumb {
 	display: block;
 	text-align: center;
