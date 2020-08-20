@@ -26,37 +26,93 @@
       <link rel="stylesheet" href="../css/owl.theme.default.min.css">
    </head>
    <body>
-      <!--==navbar start==-->
-      <section id="navbar">
-         <nav class="navbar   fixed-top  navbar-expand-md navbar-light navbar-light py-4">
-            <div class="container">
-               <a class="navbar-brand " href="afterloginhomepage.html"><span>T</span>i<span>n</span>k<span>e</span>r</a>
-               <!--=navbar page link=-->
-               <div class="collapse navbar-collapse order-3 order-md-2" id="navbarNavDropdown">
-                  <ul class="navbar-nav mr-auto">
-                     <li class="navbar-item"><a class="nav-link" href="afterloginhomepage.html">Home</a></li>
-                     <li class="navbar-item"><a class="nav-link" href="afterloginparking.html">Parking</a></li>
-                     <li class="navbar-item"><a class="nav-link" href="afterloginroom.html">Room</a></li>
-                     <li class="navbar-item"><a class="nav-link" href="afterloginfarmng.html">Farming</a></li>
-                     <li class="navbar-item"><a class="nav-link" href="afterloginproduct.html">Product</a></li>
-                     <li class="navbar-item active"><a class="nav-link" href="afterlogincontact.html">Contact</a></li>
-                  </ul>
+        <!--==sidebar start==-->
+        <div class="page-wrapper chiller-theme toggled">
+         <a id="show-sidebar" class="btn btn-sm btn-secondary"style="z-index: 1;" href="#">
+         <i class="fas fa-bars"></i>
+         </a>
+         <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+               <div class="sidebar-brand">
+                  <a href="#">Tinker</a>
+                  <div id="close-sidebar">
+                     <i class="fas fa-times"></i>
+                  </div>
                </div>
-               <div class="d-flex flex-row order-2 order-md-3">
-                  <!--= navbar login=-->
-                  <ul class="navbar-nav flex-row">
-                     <li class="navbar-item"><a class="nav-link" href="#">Username</a></li>
+               <div class="sidebar-header">
+                  <div class="user-pic">
+                     <img class="img-responsive img-rounded" src="../images/user.jpg" alt="User picture">
+                  </div>
+                  <div class="user-info">
+                     <span class="user-name"><strong>Username</strong>
+                     </span>
+                     <span class="user-status">
+                     <i class="fa fa-circle"></i>
+                     <span>Online</span>
+                     </span>
+                  </div>
+               </div>
+               <!--==sidebar-body==-->
+               <div class="sidebar-menu">
+                  <ul>
+                     <li>
+                        <a href="afterloginhomepage.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="afterloginproduct.html">
+                        <i class="fa fa-cart-plus"></i>
+                        <span>Product</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="afterlogincontact.html">
+                        <i class="fa fa-phone"></i>
+                        <span  class="sidebar-active">Contact</span>
+                        </a>
+                     </li>
+                     <li class="header-menu">
+                        <span>Catagories</span>
+                     </li>
+                     <li>
+                        <a href="afterloginroom.html">
+                        <i class="fa fa-hotel"></i>
+                        <span>Room</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="afterloginparking">
+                        <i class="fa fa-car"></i>
+                        <span>Parking</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="afterloginfarming">
+                        <i class="fa fa-tree"></i>
+                        <span>Farming</span>
+                        </a>
+                     </li>
+                     <li>
+                        <br>
+                        <br>
+                        <a href="../index.html">
+                        <i class="fa fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                        </a>
+                     </li>
                   </ul>
-                  <!--=navbar humberger toggler=-->
-                  <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
-                     data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                     aria-label="Toggle navigation">
-                     <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-                  </button>
                </div>
             </div>
          </nav>
-      </section>
+      </div>
+      <!--==sidebar end==-->
+      <!-- As a heading start-->
+      <nav class="navbar navbar-dark  pt-3" style="background-color: #97d19f;">
+         <span class="navbar-brand mb-0 h1 ml-auto mr-auto">Low Cost IoT Based Green Home</span>
+      </nav>
+      <!-- As a heading end-->
       <!--banner start-->
       <section id="contact-banner">
          <div class="contactBanner-overlay">
@@ -190,13 +246,13 @@
                         <h4>Catagories</h4>
                         <div class="gap-10"></div>
                         <ul class="page-catagories2">
-                           <a href="room.html">
+                           <a href="afterloginroom.html">
                               <li class="d-inline mx-2">Room</li>
                            </a>
-                           <a href="farming.html">
+                           <a href="afterloginfarming">
                               <li class="d-inline  mx-2">Farming</li>
                            </a>
-                           <a href="parking.html">
+                           <a href="afterloginparking">
                               <li class="d-inline  mx-2">Parking</li>
                            </a>
                         </ul>
