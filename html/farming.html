@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Low cost IoT base green home</title>
+      <!--==Basic info==-->
+      <meta name="description" content="Internet of things with html5,css3, javascript,jquery & bootsrap framwork">
+      <!--==font family==-->
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+      <!--==font awesome==-->
+      <link rel="stylesheet" href="../fontawesome-free-5.13.1-web/css/all.css">
+      <!--==Bootstrap css==-->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <!--==anitame css==-->
+      <link rel="stylesheet" href="../css/animate.css">
+      <link rel="stylesheet" href="../aos/aos.css">
+      <!--==my css==-->
+      <link rel="stylesheet" href="../css/iot.css">
+      <!--==responsive css==-->
+      <link rel="stylesheet" href="../css/responsive.css">
+      <!--==Lightbox==-->
+      <link rel="stylesheet" href="../css/lightbox.min.css">
+      <!--==Owl Carousel==-->
+      <link rel="stylesheet" href="../css/owl.carousel.min.css">
+      <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+   </head>
+   <body>
+      <!--==sidebar start==-->
+      <div class="page-wrapper chiller-theme toggled">
+         <a id="show-sidebar" class="btn btn-sm btn-secondary"style="z-index: 1;" href="#">
+         <i class="fas fa-bars"></i>
+         </a>
+         <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+               <div class="sidebar-brand">
+                  <a href="#">Tinker</a>
+                  <div id="close-sidebar">
+                     <i class="fas fa-times"></i>
+                  </div>
+               </div>
+               <div class="sidebar-header">
+                  <div class="user-pic">
+                     <img class="img-responsive img-rounded" src="../images/user.jpg" alt="User picture">
+                  </div>
+                  <div class="user-info">
+                     <span class="user-name"><strong>Username</strong>
+                     </span>
+                     <span class="user-status">
+                     <i class="fa fa-circle"></i>
+                     <span>Online</span>
+                     </span>
+                  </div>
+               </div>
+               <!--==sidebar-body==-->
+               <div class="sidebar-menu">
+                  <ul>
+                     <li>
+                        <a href="afterloginhomepage.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="afterloginproduct.html">
+                        <i class="fa fa-cart-plus"></i>
+                        <span>Product</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="afterlogincontact.html">
+                        <i class="fa fa-phone"></i>
+                        <span>Contact</span>
+                        </a>
+                     </li>
+                     <li class="header-menu">
+                        <span>Catagories</span>
+                     </li>
+                     <li>
+                        <a href="afterloginroom.html">
+                        <i class="fa fa-hotel"></i>
+                        <span>Room</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="afterloginparking">
+                        <i class="fa fa-car"></i>
+                        <span>Parking</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="afterloginfarming">
+                        <i class="fa fa-tree"></i>
+                        <span class="sidebar-active">Farming</span>
+                        </a>
+                     </li>
+                     <li>
+                        <br>
+                        <br>
+                        <a href="../index.html">
+                        <i class="fa fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!--==sidebar end==-->
+      <!-- As a heading start-->
+      <nav class="navbar navbar-dark  pt-3" style="background-color: #97d19f;">
+         <span class="navbar-brand mb-0 h1 ml-auto">TINKER</span>
+      </nav>
+      <!-- As a heading end-->
+      <!--==home page backgroubd start==-->
+      <section id="background-img">
+         <div class="jumbotron jumbotron-fluid">
+            <div class="background-overlay"></div>
+            <div class="container text-center">
+               <div class="background-text">
+                  <h1 class="animate__animated animate__fadeInRight" style="animation-duration:2s;">Low Cost IoT Based
+                     Green Home
+                  </h1>
+                  <h5 class="animate__animated animate__fadeInLeft" style="animation-duration:3s;">A beautiful combination
+                     of nature and technology
+                  </h5>
+               </div>
+               <hr class="separator animate__animated animate__zoomIn" style="animation-duration:3s;" />
+               <a href="afterlogincontact.html"><button type="button"
+                  class="btn btn-outline-success  background-btn  btn-lg  animate__animated animate__zoomIn"
+                  style="animation-delay:1s; animation-duration:2s;">Contact Us</button></a>
+            </div>
+         </div>
+      </section>
+      <!--==home page backgroubd end==-->
+      <!--=About company profile start=-->
+      <section id="about">
+         <div class="container text-center">
+            <div class="about">
+               <div class="common-header" data-aos="zoom-in" data-aos-duration="1500">
+                  <span><i class="fab fa-creative-commons-sa"></i></span>
+                  <h2 class="d-inline">Company Profile</h2>
+                  <p class="py-2">Welcome to Tinker for your green home.Our mission is to provide safe and
+                     convenient solutions by leveraging secure technologies.we’re committed to
+                     providing you with exceptional service.
+                  </p>
+               </div>
+               <div class="row tab-row text-left" style="overflow-x: hidden">
+                  <div class="col-md-3 col-lg-3 col-xl-3 col-sm-12 col-xs-12">
+                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#tab-1" role="tab"
+                           aria-controls="v-pills-home" aria-selected="true">Who We Are</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#tab-2" role="tab"
+                           aria-controls="v-pills-profile" aria-selected="false">What We Do</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#tab-3" role="tab"
+                           aria-controls="v-pills-messages" aria-selected="false">Why We Started It</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#tab-5" role="tab"
+                           aria-controls="v-pills-messages" aria-selected="false">Safety</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#tab-6" role="tab"
+                           aria-controls="v-pills-messages" aria-selected="false">Support</a>
+                     </div>
+                  </div>
+                  <div class="col-md-9 col-lg-9 col-xl-9 col-sm-12 col-xs-12" data-aos="fade-left"
+                     data-aos-duration="2000">
+                     <div class="tab-content text-left" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active ml-3" id="tab-1" role="tabpanel"
+                           aria-labelledby="v-pills-home-tab">
+                           <span><i class="fas fa-users fa-8x mb-2"></i></span>
+                           <h4>We Are A Tallented Package</h4>
+                           <p class="mt-3"> We specialize in home automation through smart
+                              technology solutions that make your space connected, intuitive and safe.
+                              We are an experienced package and always ready to serve you.
+                              Tinker simplifies your problems and solves it instantly.
+                           </p>
+                        </div>
+                        <div class="tab-pane fade ml-3" id="tab-2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                           <span><i class="fas fa-briefcase fa-8x mb-2"></i></span>
+                           <h4>We Do The Best</h4>
+                           <p class="mt-3">We are mainly working for organize your room,maintain your
+                              farm and provide you a smart parking system with the Internet Of Things.
+                              Works for Maximizing home security.Essuring security and privacy by
+                              multiple alarms and authentication with advanced components.
+                              It provides you advanced security systems.
+                           </p>
+                        </div>
+                        <div class="tab-pane fade ml-3" id="tab-3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                           <span><i class="fas fa-hourglass-start fa-8x mb-2"></i></span>
+                           <h4>For creating the great combination of nature and technology.</h4>
+                           <p class="mt-3">Basically we are attempting to live a modern and secured life
+                              with the use of modern technologies and make accurate use of our properties.
+                              So,we works for make a home which will be green enough with the touch of farming
+                              and comfortable and safe with all the advance technologies and low costed comparatively.
+                           </p>
+                        </div>
+                        <div class="tab-pane fade ml-3" id="tab-5" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                           <span><i class="fas fa-user-lock fa-8x mb-2"></i></span>
+                           <h4>Security Is Garunted</h4>
+                           <p class="mt-3">Tinker’s unique and modern technology ensures all-round security for every home.
+                              We provides an end-to-end security system that is technically solid.
+                              With its interactive platform Tinker keeps you connected with your apartment
+                              security system in real time, no matter where you are!
+                           </p>
+                        </div>
+                        <div class="tab-pane fade ml-3" id="tab-6" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                           <span><i class="fas fa-life-ring fa-8x mb-2"></i></span>
+                           <h4>24/7 Hour Support</h4>
+                           <p class="mt-3">
+                              With a goal to ensure security for everyone, Tinker keeps the service charge very low.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--=About company profile end=-->
+      <!--=service start=-->
+      <section id="service">
+         <div class="container text-center">
+            <div class="service">
+               <div class="common-header" data-aos="zoom-in" data-aos-duration="1000">
+                  <span><i class="fa fa-cogs"></i></span>
+                  <h2 class="d-inline">Service We Provide</h2>
+                  <p class="py-2">We believe in work not in word.Our smart ideas make your life more easier.
+                  </p>
+               </div>
+               <div class="gap-100 d-none d-lg-block"></div>
+               <div class="container text-center service-container">
+                  <div class="row">
+                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 col-xl-4" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="service-content">
+                           <i class="fas fa-dolly-flatbed fa-2x"></i>
+                           <div class="service-box">
+                              <h4>Space Allocation</h4>
+                              <p>Smart parking, which can allocate our land properly and make
+                                 the best use of it by multi floored parking.
+                                 it helps to reserve parking slots and increasing the parking
+                                 capacity.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="gap-100 d-none d-lg-block"></div>
+                     </div>
+                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 col-xl-4" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="service-content">
+                           <i class="fas fa-charging-station fa-2x"></i>
+                           <div class="service-box">
+                              <h4>Save Electricity</h4>
+                              <p>preventing wastage of electricity as we can operate them
+                                 by not being at home also through our mobile phone.
+                                 The system will shut down the devices which are not in use now.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="gap-100 d-none d-lg-block"></div>
+                     </div>
+                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 col-xl-4" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="service-content">
+                           <i class="fas fa-cloud-sun fa-2x"></i>
+                           <div class="service-box">
+                              <h4>Environmental Embalance</h4>
+                              <p>Making smart farming available and that can help us to balance the environment.
+                                 It can optimize the use of natural resources
+                                 and manage the quality of air,water and soil.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="gap-100 d-none d-lg-block"></div>
+                     </div>
+                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 col-xl-4" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="service-content">
+                           <i class="fas fa-city fa-2x"></i>
+                           <div class="service-box">
+                              <h4>Urbanization</h4>
+                              <p>Improve the quality of urban services or reduce its costs.
+                                 It stands out for its specificities: smart management, lifestyle,
+                                 mobility, housing, as well as a smart economy.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="gap-100 d-none d-lg-block"></div>
+                     </div>
+                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 col-xl-4" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="service-content">
+                           <i class="fas fa-user-lock fa-2x"></i>
+                           <div class="service-box">
+                              <h4>Security Issue</h4>
+                              <p>Maximizing home security.Essuring security and privacy by
+                                 multiple alarms and authentication with advanced components.
+                                 It provides you advanced security systems.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="gap-100 d-none d-lg-block"></div>
+                     </div>
+                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 col-xl-4" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <div class="service-content">
+                           <i class="fas fa-american-sign-language-interpreting fa-2x"></i>
+                           <div class="service-box">
+                              <h4>Make Life Easier</h4>
+                              <p>People always wanted to have everything in more comfort and convenient way.It perfectly
+                                 copes with the task of simplifying and improving your life.And make life easier
+                              </p>
+                           </div>
+                        </div>
+                        <div class="gap-100 d-none d-lg-block"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--=service end=-->
+      <!--=product-detail homepage start=-->
+      <section id="product-detail">
+         <div class="container text-center">
+            <div class="product-detail">
+               <div class="common-header" data-aos="zoom-in" data-aos-duration="1000">
+                  <span><i class="fas fa-box-open"></i></span>
+                  <h2 class="d-inline">Our Exclusive Items</h2>
+               </div>
+            </div>
+         </div>
+         <div class="gap-100 d-none d-lg-block"></div>
+         <div class="container product-head">
+            <div class="gap-30"></div>
+            <div class="row">
+               <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-5">
+                  <div class="product-top image-resize">
+                     <img src="../images/smarthome.jpg" Class="img-responsive w-100" alt="item 1">
+                     <div class="overlay">
+                        <a href="https://chatwith.io/s/5f37f6f0a62d2"><button type="button" class="btn btn-danger"
+                           title="Text us for order"><i class="fab fa-whatsapp"></i></button></a>
+                        <a href="tel:01815718918"><button type="button" class="btn btn-danger" title="Call us for order"><i
+                           class="fa fa-phone"></i></button></a>
+                        <button type="button" class="btn btn-danger" title="Item 1"><i> item.1</i></button>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                     <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <i class="fas fa-star-half-alt" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <h3>Smart Home</h3>
+                     <h5>$7000</h5>
+                     <p class="text-center">product details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                        eius natus eaque illo eos porro ea ipsam nesciunt provident obcaecati!
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-5">
+                  <div class="product-top image-resize">
+                     <img src="../images/smartparking.jpg" Class="img-responsive w-100" alt="item 2">
+                     <div class="overlay">
+                        <a href="https://chatwith.io/s/5f37f6f0a62d2"><button type="button" class="btn btn-danger"
+                           title="Text us for order"><i class="fab fa-whatsapp"></i></button></a>
+                        <a href="tel:01815718918"><button type="button" class="btn btn-danger" title="Call us for order"><i
+                           class="fa fa-phone"></i></button></a>
+                        <button type="button" class="btn btn-danger" title="Item 2"><i> item.2</i></button>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                     <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <i class="fas fa-star-half-alt" data-aos="zoom-in" data-aos-delay="300"></i>
+                     <h3>Smart Parking</h3>
+                     <h5>$7500</h5>
+                     <p class="text-center">product details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                        eius natus eaque illo eos porro ea ipsam nesciunt provident obcaecati!
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!--=product-detail homepage end=-->
+      <!--=team homepage start=-->
+      <section id="team">
+         <div class="container text-center">
+            <div class="team">
+               <div class="common-header" data-aos="flip-up" data-aos-duration="1200">
+                  <span><i class="fas fa-users"></i></span>
+                  <h2 class="d-inline">Meet With Our Tallented Team</h2>
+               </div>
+            </div>
+            <div class="gap-100 d-none d-lg-block"></div>
+            <div class="row team-container" style="overflow-x: hidden">
+               <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 sol-xs-12" data-aos="slide-right" data-aos-duration="2000">
+                  <div class="team-left">
+                     <div class="left-heading text-left">
+                        <h5 class="d-none d-lg-inline">Who We Are?</h5>
+                        <h4> Always Ready To<br> <strong>Serve</strong> You.</h4>
+                     </div>
+                     <p class="text-left"> We cherish what we do and our goal is to form every
+                        customer cheerful and interaction the finest it can be. Our people groups
+                        persistently get preparing and education so we are able to assist you explore
+                        the most recent innovation and provide the proper arrangements for your needs.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 sol-xs-12" data-aos="slide-left" data-aos-duration="2000">
+                  <div class="owl-carousel owl-theme">
+                     <!--=team member1=-->
+                     <div class="team-member">
+                        <div>
+                           <img src="../images/Mohona.jpg" alt="Team Member 1" class="img-responsive">
+                           <div class="team-member-overlay">
+                              <div class="team-member-info text-center">
+                                 <h6>Tasnim Mohona</h6>
+                                 <p>Admin</p>
+                                 <ul class="social-list">
+                                    <li><a href="https://www.facebook.com/kazitasnim.mohona"><i
+                                       class="fab fa-facebook"></i></a></li>
+                                    <li><a
+                                       href="https://www.linkedin.com/in/tasnim-mohona-06130b148?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOX9Ju5saRMac8Vc7ewBtMg%3D%3D"><i
+                                       class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:tasnimmohona123@gmail.com"><i class="fab fa-google"></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--=team member2=-->
+                     <div class="team-member">
+                        <div>
+                           <img src="../images/rezvee.jpg" alt="Team Member 2" class="img-responsive">
+                           <div class="team-member-overlay">
+                              <div class="team-member-info text-center">
+                                 <h6>Tariqul Islam</h6>
+                                 <p>Admin</p>
+                                 <ul class="social-list">
+                                    <li><a href="https://www.facebook.com/md.rezvee.77"><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li><a
+                                       href="https://www.linkedin.com/in/md-rezvee-0654a4131?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMKm3DO7hTTqp%2BbUssJmG4g%3D%3D"><i
+                                       class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:mdrezvee@gmail.com"><i class="fab fa-google"></i></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--=team member3=-->
+                     <div class="team-member">
+                        <div>
+                           <img src="../images/shama.jpg" alt="Team Member 3" class="img-responsive">
+                           <div class="team-member-overlay">
+                              <div class="team-member-info text-center">
+                                 <h6>Sharmin Jahan</h6>
+                                 <p>Admin</p>
+                                 <ul class="social-list">
+                                    <li><a href="https://www.facebook.com/shama2702"><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li><a
+                                       href="https://www.linkedin.com/in/sharmin-jahan-shama-87b711155?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlTt5tsjJQnuQFNjbcELxHA%3D%3D"><i
+                                       class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:sharminjahan2720@gmail.com"><i class="fab fa-google"></i></i></a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--=team member4=-->
+                     <div class="team-member">
+                        <div>
+                           <img src="../images/hridoy.jpg" alt="Team Member 4" class="img-responsive">
+                           <div class="team-member-overlay">
+                              <div class="team-member-info text-center">
+                                 <h6>Hridoy Kumar</h6>
+                                 <p>Admin</p>
+                                 <ul class="social-list">
+                                    <li><a href="https://www.facebook.com/riday.das.73"><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-google"></i></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--==team homepage end==-->
+      <!--==footer homepage start==-->
+      <section id="footer">
+         <div class="footer-overlay"></div>
+         <div class="container">
+            <div class="footer">
+               <div class="row" style="overflow-x:hidden" data-aos="fade-down" data-aos-duration="1000">
+                  <!--=footer left=-->
+                  <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4 col-xs-12">
+                     <div class="footer-left  mb-5">
+                        <h4>Other Pages</h4>
+                        <div class="gap-10"></div>
+                        <ul class="page-catagories">
+                           <a href="afterloginhomepage.html">
+                              <li>Home</li>
+                           </a>
+                           <hr class="footer-horizontal">
+                           <a href="afterloginproduct.html">
+                              <li>Product</li>
+                           </a>
+                           <hr class="footer-horizontal">
+                           <a href="afterlogincontact.html">
+                              <li>Contact</li>
+                           </a>
+                           <hr class="footer-horizontal">
+                        </ul>
+                        <div class="gap-20"></div>
+                        <h4>Catagories</h4>
+                        <div class="gap-10"></div>
+                        <ul class="page-catagories2">
+                           <a href="room.html">
+                              <li class="d-inline mx-2">Room</li>
+                           </a>
+                           <a href="farming.html">
+                              <li class="d-inline  mx-2">Farming</li>
+                           </a>
+                           <a href="parking.html">
+                              <li class="d-inline  mx-2">Parking</li>
+                           </a>
+                        </ul>
+                     </div>
+                  </div>
+                  <!--=footer middle=-->
+                  <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4 col-xs-12 gal">
+                     <div class="footer-middle  mb-5">
+                        <h4>Our moments and relevant</h4>
+                        <div class="gap-10"></div>
+                        <div class="gallery img-responsive ">
+                           <a href="../images/flicker (1).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (1).jpg" alt="Office"></a>
+                           <a href="../images/flicker (2).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (2).jpg" alt="Office"></a>
+                           <a href="../images/flicker (3).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (3).jpg" alt="Office"></a>
+                           <a href="../images/flicker (4).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (4).jpg" alt="Office"></a>
+                           <a href="../images/flicker (5).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (5).jpg" alt="Office"></a>
+                           <a href="../images/flicker (6).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (6).jpg" alt="Office"></a>
+                           <a href="../images/flicker (7).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (7).jpg" alt="Office"></a>
+                           <a href="../images/flicker (8).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (8).jpg" alt="Office"></a>
+                           <a href="../images/flicker (9).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (9).jpg" alt="Office"></a>
+                           <a href="../images/flicker9.jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker9.jpg" alt="Office"></a>
+                           <a href="../images/flicker10.jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker10.jpg" alt="Office"></a>
+                           <a href="../images/flicker11.jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker11.jpg" alt="Office"></a>
+                        </div>
+                     </div>
+                  </div>
+                  <!--=footer right=-->
+                  <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4 col-xs-12">
+                     <div class="footer-right mb-5">
+                        <h4>About US</h4>
+                        <h1>Tinker</h1>
+                        <p>We specialize in home automation through smart
+                           technology solutions that make your space connected, intuitive and safe.
+                           We are an experienced package and always ready to serve you.
+                           Tinker simplifies your problems and solves it instantly.
+                        </p>
+                        <div class="gap-30"></div>
+                        <p>Basically we are attempting to live a modern and secured life
+                           with the use of modern technologies and make accurate use of our properties.
+                           So,we works for make a home which will be green enough with the touch of farming
+                           and comfortable and safe with all the advance technologies and low costed comparatively.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--==footer homepage end==-->
+      <!--==copyright homepage start==-->
+      <section id="copyright">
+         <div class="container text-center">
+            <div class="row" style="overflow-x: hidden">
+               <!--=copyright text=-->
+               <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12">
+                  <div class="copyright-text ml-5">
+                     <p>&copy; Copyright 2020 <span>Tinker</span>.com. All Rights Reserved</p>
+                  </div>
+               </div>
+               <!--=copyright social icon=-->
+               <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12">
+                  <div class="copyright-icon  mr-3">
+                     <ul>
+                        <li><a href="#" data-toggle="tooltip" class="" title="twitter" data-placement="top"><i
+                           class="fab fa-twitter "></i></a></li>
+                        <li><a href="https://www.facebook.com/kazitasnim.mohona" data-toggle="tooltip" class=""
+                           title="facebook" data-placement="top"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="mailto:tasnimmohona123@gmail.com" data-toggle="tooltip" class=" " title="google"
+                           data-placement="top"><i class="fab fa-google"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/tasnim-mohona-06130b148?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOX9Ju5saRMac8Vc7ewBtMg%3D%3"
+                           Ddata-toggle="tooltip" class="" title="linkedin" data-placement="top"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="#" data-toggle="tooltip" class="" title="skype" data-placement="top"><i
+                           class="fab fa-skype"></i></a></li>
+                     </ul>
+                  </div>
+                  <!--==scrolltop start==-->
+                  <div class="scrott-to-top">
+                     <div class="scrollup">
+                        <i class="far fa-arrow-alt-circle-up"></i>
+                     </div>
+                  </div>
+                  <!--=scrolltop end=-->
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--==copyright homepage end==-->
+      <!--==jquery==-->
+      <script src="../js/jquery.min.js"></script>
+      <!--==aos.js==-->
+      <script src="../aos/aos.js"></script>
+      <!--==bootstrap js==-->
+      <script src="../js/bootstrap.min.js"></script>
+      <!--lightbox js-->
+      <script src="../js/lightbox-plus-jquery.min.js"></script>
+      <!-- ==Owl Carousel== -->
+      <script src="../js/owl.carousel.min.js"></script>
+      <!--==My js==-->
+      <script src="../js/iot.js"></script>
+   </body>
+</html>

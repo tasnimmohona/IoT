@@ -1498,3 +1498,14 @@ common header
 	.rfid .list-group-horizontal>.list-group-item+.list-group-item {
 	border-top-width:4px;
 	}
+
+	/*farming backgriund*/
+	
+
+	#farmingbg{
+		background-size:100%;
+		background-repeat: no-repeat;
+		background:#1db891;
+		
+	}
+    

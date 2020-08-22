@@ -79,7 +79,7 @@
                      <li>
                         <a href="afterloginroom.html">
                         <i class="fa fa-hotel"></i>
-                        <span class="sidebar-active">Room</span>
+                        <span>Room</span>
                         </a>
                      </li>
                      <li>
@@ -91,7 +91,7 @@
                      <li>
                         <a href="afterloginfarming.html">
                         <i class="fa fa-tree"></i>
-                        <span>Farming</span>
+                        <span class="sidebar-active">Farming</span>
                         </a>
                      </li>
                      <li>
@@ -109,22 +109,21 @@
       </div>
       <!--==sidebar end==-->
       <!--==bg start==-->
-      <section id="roombg">
+      <section id="farmingbg">
          <div class="afterloginbg">
             <div class="container afterlogin-content">
                <div class="row" style="overflow-x: hidden">
-                  <!--==bg left==-->
-                  <div class="col-6" data-aos="fade-right" data-aos-duration="1200">
-                     <h2>Add A Little Smartness To Your Things</h2>
-                     <p class="lead mt-2">Your Home At your Command !</p>
+                  <!--==bg content start==-->
+                  <div class="col-12 text-left">
+                     <h2  data-aos="fade-right" data-aos-duration="1200">Grow Your Green With Smart Solutions</h2>
+                     <p  data-aos="fade-right" data-aos-duration="1200"class="lead mt-2">Your Farm At your Command !</p>
+                     <p  data-aos="fade-up" data-aos-duration="1800"class="lead mt-5 text-left">Find out about the importance of sustainable agriculture, potential solutions to achieve it <br> and how you can contribute. The future of farming is here!</p>
+                     <img src="../images/farmbgicon.png"  alt="leaf">
                   </div>
-                  <!--==bg right==-->
-                  <div class="col-6">
-                     <img src="../images/home 2.gif" style="width:80%;"  alt="smart room">
-                  </div>
+                  <!--==bg content end==-->
                </div>
             </div>
-            <img src="../images/roomwave.svg" alt="wave"> 
+            <img src="../images/farmingwave.svg" alt="wave"> 
          </div>
       </section>
       <!--==bg end==-->
@@ -132,115 +131,49 @@
       <section id="room">
          <div class="container text-center">
             <div class="room">
+               <!--=common for room,farming and parking=-->
                <div class="logincommon-header">
-                  <p class="lead">Smart things can teach your home 
-                     a few new tricks and make life a little bit easier.
+                  <p class="lead mt-3">Good for nature,
+                     good for you.Smart agricul true monitoring
+                     solutions to optimize productivity
                   </p>
                </div>
             </div>
-            <!--==rfid start==-->
-            <div class="rfid"  id="rfid">
-               <ul class="list-group list-group-horizontal text-center">
-                  <li class="list-group-item" id="rfidcard">RFID</li>
-                  <li class="list-group-item" id="rfidcard-number">497865466</li>
-               </ul>
-            </div>
-            <!--= rfid end==-->
             <div class="row" style="overflow-x: hidden">
-               <!--==light==-->
+               <!--==soil level==-->
                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-                  <div class="room-box1"data-aos="fade-right" data-aos-duration="1000" id="box-1">
-                     <img src="../images/icons8-reflector-bulb-80.png" 
-                        class="animate__animated animate__flash 
-                        animate__infinite	infinite"
-                        style="animation-duration:5s;"
-                        alt="light">
-                     <h2>Light</h2>
-                     <h5 id="light">ON/OF</h5>
-                  </div>
-               </div>
-               <!--==fan==-->
-               <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-                  <div class="room-box2"  data-aos="flip-left"  data-aos-duration="1000" id="box-2">
-                     <img src="../images/icons8-fan-80.png" 
-                        class="animate__animated animate__rotateIn
-                        animate__infinite	infinite"
-                        style="animation-duration:2s;"
-                        alt="fan">
-                     <h2>Fan</h2>
-                     <h5  id="fan">ON/OF</h5>
-                  </div>
-               </div>
-               <!--==pump==-->
-               <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-                  <div class="room-box3" data-aos="fade-left" data-aos-duration="1000"  id="box-3">
-                     <img src="../images/icons8-pump-80.png" 
+                  <div class="room-box2"  data-aos="zoom-in"  data-aos-duration="1000" id="box-2farming">
+                     <img src="../images/icons8-soil-80.png" 
                         class="animate__animated animate__bounce
                         animate__infinite	infinite"
                         style="animation-duration:5s;"
-                        alt="pump">
-                     <h2>Pump</h2>
-                     <h5  id="pump">ON/OF</h5>
+                        alt="soil">
+                     <h2>Soil Level</h2>
+                     <h5  id="fan-farming">60%</h5>
                   </div>
                </div>
                <!--==Temperature==-->
                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-                  <div class="room-box4" data-aos="flip-up"  data-aos-duration="1000" id="box-4">
+                  <div class="room-box4" data-aos="zoom-in"  data-aos-duration="1000" id="box-4farming">
                      <img src="../images/icons8-temperature-sensitive-80.png" 
                         class="animate__animated animate__tada
                         animate__infinite	infinite"
                         style="animation-duration:6s;"
                         alt="temperature">
                      <h2>Temperature</h2>
-                     <h5  id="temperature">29°C</h5>
+                     <h5  id="temperature-farming">29°C</h5>
                   </div>
                </div>
                <!--==Humidity==-->
                <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-                  <div class="room-box5"data-aos="zoom-in"  data-aos-duration="1200" id="box-5">
+                  <div class="room-box5"data-aos="zoom-in"  data-aos-duration="1200" id="box-5farming">
                      <img src="../images/icons8-partly-cloudy-day-80.png" 
                         class="animate__animated animate__shakeX
                         animate__infinite	infinite"
                         style="animation-duration:12s;"
                         alt="humidity">
                      <h2>Humidity</h2>
-                     <h5  id="Humidity">75%</h5>
-                  </div>
-               </div>
-               <!--==Smoke==-->
-               <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-                  <div class="room-box6"data-aos="flip-down"  data-aos-duration="1000" id="box6">
-                     <img src="../images/icons8-smoke-80.png" 
-                        class="animate__animated animate__heartBeat
-                        animate__infinite	infinite"
-                        style="animation-duration:5s;"
-                        alt="smoke">
-                     <h2>Smoke</h2>
-                     <h5  id="Smoke">Detected</h5>
-                  </div>
-               </div>
-               <!--==gas==-->
-               <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 col-xl-6">
-                  <div class="room-box7"data-aos="fade-right" data-aos-duration="1000" id="box-7">
-                     <img src="../images/icons8-gas-industry-80.png" 
-                        class="animate__animated animate__jello
-                        animate__infinite	infinite"
-                        style="animation-duration:5s;"
-                        alt="gas">
-                     <h2>Gas</h2>
-                     <h5 id="Gas">Detected</h5>
-                  </div>
-               </div>
-               <!--==flame==-->
-               <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 col-xl-6">
-                  <div class="room-box8"data-aos="fade-left" data-aos-duration="1000" id="box-8">
-                     <img src="../images/icons8-fire-80.png" 
-                        class="animate__animated animate__flash
-                        animate__infinite	infinite"
-                        style="animation-duration:5s;"
-                        alt="flame">
-                     <h2>Flame</h2>
-                     <h5 id="Flame">Not Found</h5>
+                     <h5 id="Humidity-farming">75%</h5>
                   </div>
                </div>
             </div>
@@ -279,10 +212,10 @@
                            <a href="afterloginroom.html">
                               <li class="d-inline mx-2">Room</li>
                            </a>
-                           <a href="afterloginfarming.html">
+                           <a href="afterloginfarming">
                               <li class="d-inline  mx-2">Farming</li>
                            </a>
-                           <a href="afterloginparking.html">
+                           <a href="afterloginparking">
                               <li class="d-inline  mx-2">Parking</li>
                            </a>
                         </ul>
