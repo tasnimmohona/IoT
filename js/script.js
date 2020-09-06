@@ -20,7 +20,8 @@ var auth = firebase.auth();
 auth.onAuthStateChanged(user => {
     console.log(user);
     if (user) {
-        if (window.location.pathname == "/IoT/index.html"|| window.location.pathname == "/index.html"|| window.location.pathname == "/IoT/") {
+        if (window.location.pathname == "/IoT/index.html" || window.location.pathname == "/index.html"|| window.location.pathname == "/IoT/") {
+            alert("html");
             window.location = "html/afterloginhomepage.html";
         } else if (window.location.pathname == "/IoT/html/signup.html" || window.location.pathname == "/IoT/html/product-detail.html" ||
             window.location.pathname == "/IoT/html/loginformuser.html" || window.location.pathname == "/IoT/html/contact.html"  || 
