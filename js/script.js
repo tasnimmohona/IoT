@@ -20,6 +20,7 @@ var auth = firebase.auth();
 auth.onAuthStateChanged(user => {
     console.log(user);
     if (user) {
+        alert("check");
         if (window.location.pathname == "/IoT/index.html" || window.location.pathname == "/index.html"|| window.location.pathname == "/IoT/") {
             alert("html");
             window.location = "html/afterloginhomepage.html";
