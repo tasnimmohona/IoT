@@ -28,6 +28,29 @@ auth.onAuthStateChanged(user => {
                 document.getElementById("light").innerHTML = user_details[0].switch.whiteled;
                 document.getElementById("fan").innerHTML = user_details[0].switch.fan;
                 document.getElementById("pump").innerHTML = user_details[0].switch.pump;
+                document.getElementById("temperature").innerHTML = user_details[0].temperature + " °C";
+                document.getElementById("Humidity").innerHTML = user_details[0].humidity+" %";
+                if(user_details[0].smoke == "1"){
+                    document.getElementById("Smoke").innerHTML = "Detected";
+                }
+                else{
+                    document.getElementById("Smoke").innerHTML = "Not Detected";
+                }
+
+                if(user_details[0].gas == "1"){
+                    document.getElementById("Gas").innerHTML = "Detected";
+                }
+                else{
+                    document.getElementById("Gas").innerHTML = "Not Detected";
+                }
+               
+                if(user_details[0].flam == "1"){
+                    document.getElementById("Flame").innerHTML = "Detected";
+                }
+                else{
+                    document.getElementById("Flame").innerHTML = "Not Detected";
+                }
+                
                 if(user_details[0].switch.whiteled=="off")
                 {
                     document.querySelector(".room-box1").style.backgroundColor = "red";
