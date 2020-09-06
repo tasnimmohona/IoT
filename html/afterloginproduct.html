@@ -1,112 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Low cost IoT based green some</title>
-      <!--==Basic info==-->
-      <meta name="description" content="Internet of things with html5,css3, javascript,jquery & bootsrap framwork">
-      <!--==font family==-->
-      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
-      <!--==font awesome==-->
-      <link rel="stylesheet" href="../fontawesome-free-5.13.1-web/css/all.css">
-      <!--==Bootstrap css==-->
-      <link rel="stylesheet" href="../css/bootstrap.min.css">
-      <!--==anitame css==-->
-      <link rel="stylesheet" href="../css/animate.css">
-      <link rel="stylesheet" href="../aos/aos.css">
-      <!--==my css==-->
-      <link rel="stylesheet" href="../css/iot.css">
-      <!--==responsive css==-->
-      <link rel="stylesheet" href="../css/responsive.css">
-      <!--==Lightbox==-->
-      <link rel="stylesheet" href="../css/lightbox.min.css">
-      <!--==Owl Carousel==-->
-      <link rel="stylesheet" href="../css/owl.carousel.min.css">
-      <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-   </head>
-   <body>
-       <!--==sidebar start==-->
-       <div class="page-wrapper chiller-theme toggled">
-         <a id="show-sidebar" class="btn btn-sm btn-secondary"style="z-index:1;" href="#">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Low cost IoT based green some</title>
+   <!--==Basic info==-->
+   <meta name="description" content="Internet of things with html5,css3, javascript,jquery & bootsrap framwork">
+   <!--==font family==-->
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+   <!--==font awesome==-->
+   <link rel="stylesheet" href="../fontawesome-free-5.13.1-web/css/all.css">
+   <!--==Bootstrap css==-->
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <!--==anitame css==-->
+   <link rel="stylesheet" href="../css/animate.css">
+   <link rel="stylesheet" href="../aos/aos.css">
+   <!--==my css==-->
+   <link rel="stylesheet" href="../css/iot.css">
+   <!--==responsive css==-->
+   <link rel="stylesheet" href="../css/responsive.css">
+   <!--==Lightbox==-->
+   <link rel="stylesheet" href="../css/lightbox.min.css">
+   <!--==Owl Carousel==-->
+   <link rel="stylesheet" href="../css/owl.carousel.min.css">
+   <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+</head>
+
+<body>
+   <!--==sidebar start==-->
+   <div class="page-wrapper chiller-theme toggled">
+      <a id="show-sidebar" class="btn btn-sm btn-secondary" style="z-index:1;" href="#">
          <i class="fas fa-bars"></i>
-         </a>
-         <nav id="sidebar" class="sidebar-wrapper">
-            <div class="sidebar-content">
-               <div class="sidebar-brand">
-                  <a href="#">Tinker</a>
-                  <div id="close-sidebar">
-                     <i class="fas fa-times"></i>
-                  </div>
-               </div>
-               <div class="sidebar-header">
-                  <div class="user-pic">
-                     <img class="img-responsive img-rounded" src="../images/user.jpg" alt="User picture">
-                  </div>
-                  <div class="user-info">
-                     <span class="user-name"><strong>Username</strong>
-                     </span>
-                     <span class="user-status">
-                     <i class="fa fa-circle"></i>
-                     <span>Online</span>
-                     </span>
-                  </div>
-               </div>
-               <!--==sidebar-body==-->
-               <div class="sidebar-menu">
-                  <ul>
-                     <li>
-                        <a href="afterloginhomepage.html">
-                        <i class="fa fa-home"></i>
-                        <span>Home</span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="afterloginproduct.html">
-                        <i class="fa fa-cart-plus"></i>
-                        <span class="sidebar-active">Product</span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="afterlogincontact.html">
-                        <i class="fa fa-phone"></i>
-                        <span>Contact</span>
-                        </a>
-                     </li>
-                     <li class="header-menu">
-                        <span>Catagories</span>
-                     </li>
-                     <li>
-                        <a href="afterloginroom.html">
-                        <i class="fa fa-hotel"></i>
-                        <span>Room</span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="afterloginparking.html">
-                        <i class="fa fa-car"></i>
-                        <span>Parking</span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="afterloginfarming.html">
-                        <i class="fa fa-tree"></i>
-                        <span>Farming</span>
-                        </a>
-                     </li>
-                     <li>
-                        <br>
-                        <br>
-                        <a href="../index.html">
-                        <i class="fa fa-sign-out-alt"></i>
-                        <span>Logout</span>
-                        </a>
-                     </li>
-                  </ul>
+      </a>
+      <nav id="sidebar" class="sidebar-wrapper">
+         <div class="sidebar-content">
+            <div class="sidebar-brand">
+               <a href="#">Tinker</a>
+               <div id="close-sidebar">
+                  <i class="fas fa-times"></i>
                </div>
             </div>
-         </nav>
-      </div>
+            <div class="sidebar-header">
+               <div class="user-pic">
+                  <img class="img-responsive img-rounded" src="../images/user.jpg" alt="User picture">
+               </div>
+               <div class="user-info">
+                  <span id="user-name"><strong></strong>
+                  </span>
+                  <span class="user-status">
+                     <i class="fa fa-circle"></i>
+                     <span>Online</span>
+                  </span>
+               </div>
+            </div>
+            <!--==sidebar-body==-->
+            <div class="sidebar-menu">
+               <ul>
+                  <li>
+                     <a href="afterloginhomepage.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="afterloginproduct.html">
+                        <i class="fa fa-cart-plus"></i>
+                        <span class="sidebar-active">Product</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="afterlogincontact.html">
+                        <i class="fa fa-phone"></i>
+                        <span>Contact</span>
+                     </a>
+                  </li>
+                  <li class="header-menu">
+                     <span>Catagories</span>
+                  </li>
+                  <li>
+                     <a href="afterloginroom.html">
+                        <i class="fa fa-hotel"></i>
+                        <span>Room</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="afterloginparking.html">
+                        <i class="fa fa-car"></i>
+                        <span>Parking</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="afterloginfarming.html">
+                        <i class="fa fa-tree"></i>
+                        <span>Farming</span>
+                     </a>
+                  </li>
+                  <li>
+                     <br>
+                     <br>
+                     <a href="../index.html" onclick="logout();">
+                        <i class="fa fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
    <!--==sidebar end==-->
    <!-- As a heading start-->
    <nav class="navbar navbar-dark  pt-3" style="background-color: #97d19f;">
@@ -115,103 +117,103 @@
    <!-- As a heading end-->
    <!--banner start-->
    <section id="product-banner">
-    <div class="productBanner-overlay">
-       <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-             <h3>Product</h3>
-             <li class="breadcrumb-item"><a href="afterloginhomepage.html"> Home</a></li>
-             <li class="breadcrumb-item active" aria-current="page">product</li>
-          </ol>
-       </nav>
-    </div>
- </section>
- <!--banner end-->
- <!--=product-detail start=-->
- <section id="product-detail">
-    <div class="container text-center">
-       <div class="product-detail">
-          <div class="common-header" data-aos="zoom-in" data-aos-duration="1000">
-             <span><i class="fas fa-box-open"></i></span>
-             <h2 class="d-inline">Our Exclusive Items</h2>
-          </div>
-       </div>
-    </div>
-    <div class="gap-100 d-none d-lg-block"></div>
-    <div class="container product-head">
-       <div class="gap-30"></div>
-       <div class="row">
-          <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-5">
-             <div class="product-top image-resize">
-                <img src="../images/brian-babb-XbwHrt87mQ0-unsplash.jpg" Class="img-responsive w-100" alt="item 1">
-                <div class="overlay">
-                   <a href="https://chatwith.io/s/5f37f6f0a62d2"><button type="button" class="btn btn-danger"
-                         title="Text us for order"><i class="fab fa-whatsapp"></i></button></a>
-                   <a href="tel:01815718918"><button type="button" class="btn btn-danger" title="Call us for order"><i
-                            class="fa fa-phone"></i></button></a>
-                   <button type="button" class="btn btn-danger" title="Item 1"><i> item.1</i></button>
-                </div>
-             </div>
-             <div class="product-bottom text-center">
-                <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
-                <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
-                <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
-                <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
-                <i class="fas fa-star-half-alt" data-aos="zoom-in" data-aos-delay="300"></i>
-                <h3>Smart Home</h3>
-                <h5>$7000</h5>
-                <p class="text-center">product details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                   eius natus eaque illo eos porro ea ipsam nesciunt provident obcaecati!</p>
-             </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-5">
-             <div class="product-top image-resize">
-                <img src="../images/brian-babb-XbwHrt87mQ0-unsplash.jpg" Class="img-responsive w-100" alt="item 2">
-                <div class="overlay">
-                   <a href="https://chatwith.io/s/5f37f6f0a62d2"><button type="button" class="btn btn-danger"
-                         title="Text us for order"><i class="fab fa-whatsapp"></i></button></a>
-                   <a href="tel:01815718918"><button type="button" class="btn btn-danger" title="Call us for order"><i
-                            class="fa fa-phone"></i></button></a>
-                   <button type="button" class="btn btn-danger" title="Item 2"><i> item.2</i></button>
-                </div>
-             </div>
-             <div class="product-bottom text-center">
-                <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
-                <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
-                <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
-                <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
-                <i class="fas fa-star-half-alt" data-aos="zoom-in" data-aos-delay="300"></i>
-                <h3>Smart Parking</h3>
-                <h5>$7500</h5>
-                <p class="text-center">product details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                   eius natus eaque illo eos porro ea ipsam nesciunt provident obcaecati!</p>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!--=Book now startt=-->
-    <div id="book-now">
-       <div class="container text-right">
-          <div class="row" text-right>
-             <div class="col">
-                <img src="../images/book now.gif" alt="book now" class="book-nowgif"></img>
-                <div class="panel panel-default">
-                   <div class="panel-body" data-aos="fade-right">
-                      <div class="book-icon text-right">
-                         <a href="tel:01815718918"><i class="fas fa-phone-square-alt" data-toggle="tooltip"
-                               data-placement="top" title="call us"></i></a>
-                         <a href="https://chatwith.io/s/5f37f6f0a62d2"><i class="fab fa-whatsapp fa-2x"
-                               data-toggle="tooltip" data-placement="top" title="text-us"></i></a>
-                         <a href="mailto:tasnimmohona123@gmail.com"><i class="fas fa-envelope fa-2x"
-                               data-toggle="tooltip" data-placement="top" title="mail-us"></i>
-                            <a>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!--=Book now end=-->
+      <div class="productBanner-overlay">
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <h3>Product</h3>
+               <li class="breadcrumb-item"><a href="afterloginhomepage.html"> Home</a></li>
+               <li class="breadcrumb-item active" aria-current="page">product</li>
+            </ol>
+         </nav>
+      </div>
+   </section>
+   <!--banner end-->
+   <!--=product-detail start=-->
+   <section id="product-detail">
+      <div class="container text-center">
+         <div class="product-detail">
+            <div class="common-header" data-aos="zoom-in" data-aos-duration="1000">
+               <span><i class="fas fa-box-open"></i></span>
+               <h2 class="d-inline">Our Exclusive Items</h2>
+            </div>
+         </div>
+      </div>
+      <div class="gap-100 d-none d-lg-block"></div>
+      <div class="container product-head">
+         <div class="gap-30"></div>
+         <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-5">
+               <div class="product-top image-resize">
+                  <img src="../images/brian-babb-XbwHrt87mQ0-unsplash.jpg" Class="img-responsive w-100" alt="item 1">
+                  <div class="overlay">
+                     <a href="https://chatwith.io/s/5f37f6f0a62d2"><button type="button" class="btn btn-danger"
+                           title="Text us for order"><i class="fab fa-whatsapp"></i></button></a>
+                     <a href="tel:01815718918"><button type="button" class="btn btn-danger" title="Call us for order"><i
+                              class="fa fa-phone"></i></button></a>
+                     <button type="button" class="btn btn-danger" title="Item 1"><i> item.1</i></button>
+                  </div>
+               </div>
+               <div class="product-bottom text-center">
+                  <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <i class="fas fa-star-half-alt" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <h3>Smart Home</h3>
+                  <h5>$7000</h5>
+                  <p class="text-center">product details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                     eius natus eaque illo eos porro ea ipsam nesciunt provident obcaecati!</p>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12  mb-5">
+               <div class="product-top image-resize">
+                  <img src="../images/brian-babb-XbwHrt87mQ0-unsplash.jpg" Class="img-responsive w-100" alt="item 2">
+                  <div class="overlay">
+                     <a href="https://chatwith.io/s/5f37f6f0a62d2"><button type="button" class="btn btn-danger"
+                           title="Text us for order"><i class="fab fa-whatsapp"></i></button></a>
+                     <a href="tel:01815718918"><button type="button" class="btn btn-danger" title="Call us for order"><i
+                              class="fa fa-phone"></i></button></a>
+                     <button type="button" class="btn btn-danger" title="Item 2"><i> item.2</i></button>
+                  </div>
+               </div>
+               <div class="product-bottom text-center">
+                  <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <i class="far fa-star" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <i class="fas fa-star-half-alt" data-aos="zoom-in" data-aos-delay="300"></i>
+                  <h3>Smart Parking</h3>
+                  <h5>$7500</h5>
+                  <p class="text-center">product details. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                     eius natus eaque illo eos porro ea ipsam nesciunt provident obcaecati!</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--=Book now startt=-->
+      <div id="book-now">
+         <div class="container text-right">
+            <div class="row" text-right>
+               <div class="col">
+                  <img src="../images/book now.gif" alt="book now" class="book-nowgif"></img>
+                  <div class="panel panel-default">
+                     <div class="panel-body" data-aos="fade-right">
+                        <div class="book-icon text-right">
+                           <a href="tel:01815718918"><i class="fas fa-phone-square-alt" data-toggle="tooltip"
+                                 data-placement="top" title="call us"></i></a>
+                           <a href="https://chatwith.io/s/5f37f6f0a62d2"><i class="fab fa-whatsapp fa-2x"
+                                 data-toggle="tooltip" data-placement="top" title="text-us"></i></a>
+                           <a href="mailto:tasnimmohona123@gmail.com"><i class="fas fa-envelope fa-2x"
+                                 data-toggle="tooltip" data-placement="top" title="mail-us"></i>
+                              <a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--=Book now end=-->
       <!--==footer  start==-->
       <section id="footer">
          <div class="footer-overlay"></div>
@@ -259,18 +261,30 @@
                         <h4>Our moments and relevant</h4>
                         <div class="gap-10"></div>
                         <div class="gallery img-responsive ">
-                           <a href="../images/flicker (1).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (1).jpg" alt="Office"></a>
-                           <a href="../images/flicker (2).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (2).jpg" alt="Office"></a>
-                           <a href="../images/flicker (3).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (3).jpg" alt="Office"></a>
-                           <a href="../images/flicker (4).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (4).jpg" alt="Office"></a>
-                           <a href="../images/flicker (5).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (5).jpg" alt="Office"></a>
-                           <a href="../images/flicker (6).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (6).jpg" alt="Office"></a>
-                           <a href="../images/flicker (7).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (7).jpg" alt="Office"></a>
-                           <a href="../images/flicker (8).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (8).jpg" alt="Office"></a>
-                           <a href="../images/flicker (9).jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker (9).jpg" alt="Office"></a>
-                           <a href="../images/flicker9.jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker9.jpg" alt="Office"></a>
-                           <a href="../images/flicker10.jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker10.jpg" alt="Office"></a>
-                           <a href="../images/flicker11.jpg" data-lightbox="mygallery" data-title="Tinker"><img src="../images/flicker11.jpg" alt="Office"></a>
+                           <a href="../images/flicker (1).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (1).jpg" alt="Office"></a>
+                           <a href="../images/flicker (2).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (2).jpg" alt="Office"></a>
+                           <a href="../images/flicker (3).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (3).jpg" alt="Office"></a>
+                           <a href="../images/flicker (4).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (4).jpg" alt="Office"></a>
+                           <a href="../images/flicker (5).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (5).jpg" alt="Office"></a>
+                           <a href="../images/flicker (6).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (6).jpg" alt="Office"></a>
+                           <a href="../images/flicker (7).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (7).jpg" alt="Office"></a>
+                           <a href="../images/flicker (8).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (8).jpg" alt="Office"></a>
+                           <a href="../images/flicker (9).jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker (9).jpg" alt="Office"></a>
+                           <a href="../images/flicker9.jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker9.jpg" alt="Office"></a>
+                           <a href="../images/flicker10.jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker10.jpg" alt="Office"></a>
+                           <a href="../images/flicker11.jpg" data-lightbox="mygallery" data-title="Tinker"><img
+                                 src="../images/flicker11.jpg" alt="Office"></a>
                         </div>
                      </div>
                   </div>
@@ -312,16 +326,17 @@
                   <div class="copyright-icon  mr-3">
                      <ul>
                         <li><a href="#" data-toggle="tooltip" class="" title="twitter" data-placement="top"><i
-                           class="fab fa-twitter "></i></a></li>
+                                 class="fab fa-twitter "></i></a></li>
                         <li><a href="https://www.facebook.com/kazitasnim.mohona" data-toggle="tooltip" class=""
-                           title="facebook" data-placement="top"><i class="fab fa-facebook"></i></a></li>
+                              title="facebook" data-placement="top"><i class="fab fa-facebook"></i></a></li>
                         <li><a href="mailto:tasnimmohona123@gmail.com" data-toggle="tooltip" class=" " title="google"
-                           data-placement="top"><i class="fab fa-google"></i></a></li>
+                              data-placement="top"><i class="fab fa-google"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/tasnim-mohona-06130b148?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOX9Ju5saRMac8Vc7ewBtMg%3D%3"
-                           Ddata-toggle="tooltip" class="" title="linkedin" data-placement="top"><i class="fab fa-linkedin"></i></a>
+                              Ddata-toggle="tooltip" class="" title="linkedin" data-placement="top"><i
+                                 class="fab fa-linkedin"></i></a>
                         </li>
                         <li><a href="#" data-toggle="tooltip" class="" title="skype" data-placement="top"><i
-                           class="fab fa-skype"></i></a></li>
+                                 class="fab fa-skype"></i></a></li>
                      </ul>
                   </div>
                   <!--==scrolltop start==-->
@@ -348,5 +363,9 @@
       <script src="../js/owl.carousel.min.js"></script>
       <!--==My js==-->
       <script src="../js/iot.js"></script>
-   </body>
+      <!-- firebase -->
+      <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase.js"></script>
+      <script src="../js/user.js"></script>
+</body>
+
 </html>

@@ -19,14 +19,19 @@ var u_name=document.getElementById("user-name");
 auth.onAuthStateChanged(user => {
     console.log(user);
     if (user) {
-        Firebase.ref('Flats').on('value', function (snapshot) {
-            var pass = snapshot.val().filter(v => v.email === user.email);
-            console.log(pass);
-            let name = pass[0].personal_details.name;
-            console.log(name);
-            u_name.innerHTML = name;          
-        });
+        u_name.innerHTML = user.email ;
+        // Firebase.ref('Flats').on('value', function (snapshot) {
+        //     var pass = snapshot.val().filter(v => v.email === user.email);
+        //     console.log(pass);
+        //     let name = pass[0].personal_details.name;
+        //     console.log(name);
+        //     u_name.innerHTML = name;          
+        // });
     }
 });
+
+function logout() {
+    auth.signOut();
+}
 
 
