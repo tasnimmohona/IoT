@@ -20,9 +20,11 @@ var auth = firebase.auth();
 auth.onAuthStateChanged(user => {
     console.log(user);
     if (user) {
-        if (window.location.pathname == "/index.html") {
+        if (window.location.pathname == "/IoT/index.html") {
             window.location = "html/afterloginhomepage.html";
-        } else if (window.location.pathname == "/html/signup.html" || window.location.pathname == "/html/product-detail.html" ||
+        } else if (window.location.pathname == "/IoT/html/signup.html" || window.location.pathname == "/IoT/html/product-detail.html" ||
+            window.location.pathname == "/IoT/html/loginformuser.html" || window.location.pathname == "/IoT/html/contact.html"  || 
+            window.location.pathname == "/html/signup.html" || window.location.pathname == "/html/product-detail.html" ||
             window.location.pathname == "/html/loginformuser.html" || window.location.pathname == "/html/contact.html") {                
             window.location = "afterloginhomepage.html";
         } else {
