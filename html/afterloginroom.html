@@ -150,8 +150,8 @@
          <!--= rfid end==-->
          <div class="row" style="overflow-x: hidden">
             <!--==light==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4" id="light_btn">
-               <a href="#light_btn" onclick="ligtControl(event);">
+            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
+               <a href="#box-1" onclick="ligtControl(event);">
                   <div class="room-box1" data-aos="fade-right" data-aos-duration="1000" id="box-1">
                      <img src="../images/icons8-reflector-bulb-80.png" class="animate__animated animate__flash 
                            animate__infinite	infinite" style="animation-duration:5s;" alt="light">
@@ -162,21 +162,25 @@
             </div>
             <!--==fan==-->
             <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-               <div class="room-box2" data-aos="flip-left" data-aos-duration="1000" id="box-2">
-                  <img src="../images/icons8-fan-80.png" class="animate__animated animate__rotateIn
-                        animate__infinite	infinite" style="animation-duration:2s;" alt="fan">
-                  <h2>Fan</h2>
-                  <h5 id="fan" class="text-uppercase">on/off</h5>
-               </div>
+               <a href="#box-2" onclick="fanControl(event);">
+                  <div class="room-box2" data-aos="flip-left" data-aos-duration="1000" id="box-2">
+                     <img src="../images/icons8-fan-80.png" class="animate__animated animate__rotateIn
+                           animate__infinite	infinite" style="animation-duration:2s;" alt="fan">
+                     <h2>Fan</h2>
+                     <h5 id="fan" class="text-uppercase">on/off</h5>
+                  </div>
+               </a>
             </div>
             <!--==pump==-->
             <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-               <div class="room-box3" data-aos="fade-left" data-aos-duration="1000" id="box-3">
-                  <img src="../images/icons8-pump-80.png" class="animate__animated animate__bounce
-                        animate__infinite	infinite" style="animation-duration:5s;" alt="pump">
-                  <h2>Pump</h2>
-                  <h5 id="pump"  class="text-uppercase">ON/OFf</h5>
-               </div>
+               <a href="#box-3" onclick="pumpControl(event);">
+                  <div class="room-box3" data-aos="fade-left" data-aos-duration="1000" id="box-3">
+                     <img src="../images/icons8-pump-80.png" class="animate__animated animate__bounce
+                           animate__infinite	infinite" style="animation-duration:5s;" alt="pump">
+                     <h2>Pump</h2>
+                     <h5 id="pump"  class="text-uppercase">ON/OFf</h5>
+                  </div>
+               </a>
             </div>
             <!--==Temperature==-->
             <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">

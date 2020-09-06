@@ -26,6 +26,8 @@ auth.onAuthStateChanged(user => {
             if (user_details.length != 0) {
                 document.getElementById("rfidcard-number").innerHTML = user_details[0].rfid;
                 document.getElementById("light").innerHTML = user_details[0].switch.whiteled;
+                document.getElementById("fan").innerHTML = user_details[0].switch.fan;
+                document.getElementById("pump").innerHTML = user_details[0].switch.pump;
                 if(user_details[0].switch.whiteled=="off")
                 {
                     document.querySelector(".room-box1").style.backgroundColor = "red";
@@ -33,6 +35,22 @@ auth.onAuthStateChanged(user => {
                 if(user_details[0].switch.whiteled=="on")
                 {
                     document.querySelector(".room-box1").style.backgroundColor = "green";
+                }
+                if(user_details[0].switch.fan=="off")
+                {
+                    document.querySelector(".room-box2").style.backgroundColor = "red";
+                }
+                if(user_details[0].switch.fan=="on")
+                {
+                    document.querySelector(".room-box2").style.backgroundColor = "green";
+                }
+                if(user_details[0].switch.pump=="off")
+                {
+                    document.querySelector(".room-box3").style.backgroundColor = "red";
+                }
+                if(user_details[0].switch.pump=="on")
+                {
+                    document.querySelector(".room-box3").style.backgroundColor = "green";
                 }
 
             } else {
@@ -68,14 +86,80 @@ function ligtControl(e) {
                 }
             }
         });
-        var fan_value = user_details[0].switch.whiteled;
-        if (fan_value == "on") {
+        var value = user_details[0].switch.whiteled;
+        if (value == "on") {
             data = {
                 whiteled: "off"
             }
         } else {
             data = {
                 whiteled: "on"
+            }
+        }
+        Firebase.ref('/Flats/').child(i).child('/switch/').update(data);
+    });
+
+}
+
+function fanControl(e) {
+    e.preventDefault();
+    auth.onAuthStateChanged(user => {
+        var i;
+        var data;
+        var user_details;
+        Firebase.ref('Flats').on('value', function (snapshot) {
+            var s = snapshot.val();
+            user_details = s.filter(v => v.email === user.email);
+            for (i = 0; i < s.length; i++) {
+                if (s[i] != null) {
+                    if (s[i].email == user.email) {
+                        ind = i;
+                        break;
+                    }
+                }
+            }
+        });
+        var value = user_details[0].switch.fan;
+        if (value == "on") {
+            data = {
+                fan: "off"
+            }
+        } else {
+            data = {
+                fan: "on"
+            }
+        }
+        Firebase.ref('/Flats/').child(i).child('/switch/').update(data);
+    });
+
+}
+
+function pumpControl(e) {
+    e.preventDefault();
+    auth.onAuthStateChanged(user => {
+        var i;
+        var data;
+        var user_details;
+        Firebase.ref('Flats').on('value', function (snapshot) {
+            var s = snapshot.val();
+            user_details = s.filter(v => v.email === user.email);
+            for (i = 0; i < s.length; i++) {
+                if (s[i] != null) {
+                    if (s[i].email == user.email) {
+                        ind = i;
+                        break;
+                    }
+                }
+            }
+        });
+        var value = user_details[0].switch.pump;
+        if (value == "on") {
+            data = {
+                pump: "off"
+            }
+        } else {
+            data = {
+                pump: "on"
             }
         }
         Firebase.ref('/Flats/').child(i).child('/switch/').update(data);
