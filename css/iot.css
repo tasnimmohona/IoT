@@ -1464,11 +1464,12 @@ ul.page-catagories a:hover li {
 .sidebar-wrapper .sidebar-menu ul li a,
 #show-sidebar,
 #close-sidebar {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
 }
 
 
@@ -1477,7 +1478,6 @@ ul.page-catagories a:hover li {
 .page-wrapper.toggled .sidebar-wrapper {
 	left: 0px;
 }
-
 @media screen and (min-width: 768px) {
 	.page-wrapper.toggled .page-content {
 		padding-left: 300px;
