@@ -1530,6 +1530,13 @@ ul.page-catagories a:hover li {
 	padding: 10px 20px;
 	display: flex;
 	align-items: center;
+	color: white;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Lobster', cursive;
+	font-family: 'Notable', sans-serif;
+	font-family: 'Piedra', cursive;
+	font-family: 'Yellowtail', cursive;
+	font-weight: bold;
 }
 
 .sidebar-wrapper .sidebar-brand>a {
@@ -1976,3 +1983,12 @@ ul.page-catagories a:hover li {
 	border-radius: 2%;
 	padding: 50px 0px;
 }
+/*============================================
+	                    apply for room
+	=============================================== */
+
+	#request-form{
+		background:url("../images/bg2.svg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}

@@ -52,7 +52,7 @@ $(window).on('scroll', function() {
 //navbar active class color change
 $(window).on('scroll', function() {
 
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 900) {
 
         $('.current').addClass('navbar-item active a animated fadeInDown');
     } else {
