@@ -46,3 +46,37 @@ function loginUser(e) {
         alert(errorMessage);
     });
 }
+
+function createUser(e) {
+    e.preventDefault();
+    var email = document.getElementById("userEmail").value;
+    var password = document.getElementById("userPassword").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+
+    // console.log(password);
+    // console.log(confirmPassword);
+    //validate that both passwords are same
+    if (password == confirmPassword) {
+        auth.createUserWithEmailAndPassword(email, password).then(
+            function () {
+                
+                alert("Successfully create the account");
+
+                //console.log("success");
+                window.location = "loginformuser.html"
+    
+            }).catch(function (error) {
+            //this function handles errors
+            var errorCode = error.code;
+            console.log(errorCode);
+            var errorMessage = error.message;
+            alert(errorMessage);
+            console.log(errorMessage);
+        });
+
+    } else {
+        //alert when password did not matches
+        alert("password does not matches");
+    }
+
+}
