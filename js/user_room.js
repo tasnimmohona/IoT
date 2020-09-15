@@ -22,8 +22,11 @@ auth.onAuthStateChanged(user => {
     if (user) {
         u_name.innerHTML = user.email;
         Firebase.ref('Flats').on('value', function (snapshot) {
+            //console.log(snapshot.val());
             var user_details = snapshot.val().filter(v => v.email === user.email);
+            console.log(user_details);
             if (user_details.length != 0) {
+                document.getElementById("apply_btn").style.visibility = "hidden";
                 document.getElementById("rfidcard-number").innerHTML = user_details[0].rfid;
                 document.getElementById("light").innerHTML = user_details[0].switch.whiteled;
                 document.getElementById("fan").innerHTML = user_details[0].switch.fan;
@@ -77,9 +80,10 @@ auth.onAuthStateChanged(user => {
                 }
 
             } else {
+               //document.getElementById("apply_btn").style.display="initial";
                 console.log(user_details);
-                alert("You Dont have any Room,Yet..")
-                window.location = "afterloginhomepage.html";
+                alert("You Dont have any Room,Yet.. Please Apply for a room")
+                window.location = "requestroom.html";
             }
 
 
@@ -103,7 +107,6 @@ function ligtControl(e) {
             for (i = 0; i < s.length; i++) {
                 if (s[i] != null) {
                     if (s[i].email == user.email) {
-                        ind = i;
                         break;
                     }
                 }
@@ -175,6 +178,7 @@ function pumpControl(e) {
                 }
             }
         });
+        
         var value = user_details[0].switch.pump;
         if (value == "on") {
             data = {

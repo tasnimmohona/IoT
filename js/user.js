@@ -20,6 +20,17 @@ auth.onAuthStateChanged(user => {
     //console.log(user);
     if (user) {
         u_name.innerHTML = user.email ;
+        Firebase.ref('Flats').on('value', function (snapshot) {
+            var user_details = snapshot.val().filter(v => v.email === user.email);
+            //console.log(user_details);
+            if (user_details.length != 0) {
+                // document.getElementById("apply_btn").style.visibility = "hidden";
+            }
+            else
+            {
+                document.getElementById("apply_btn").style.display="initial";
+            }
+        });
     }
 });
 

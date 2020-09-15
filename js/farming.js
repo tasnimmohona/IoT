@@ -23,9 +23,14 @@ auth.onAuthStateChanged(user => {
         Firebase.ref('Flats').on('value', function (snapshot) {
             var user_details = snapshot.val().filter(v => v.email === user.email);
             if (user_details.length != 0) {
+                
                 document.getElementById("fan-farming").innerHTML = user_details[0].soil;
                 document.getElementById("temperature-farming").innerHTML = user_details[0].temperature + " °C";
                 document.getElementById("Humidity-farming").innerHTML = user_details[0].humidity+" %";
+            }
+            else
+            {
+                document.getElementById("apply_btn").style.display="initial";
             }
     });
 }

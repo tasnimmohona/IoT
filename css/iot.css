@@ -1992,3 +1992,16 @@ ul.page-catagories a:hover li {
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+
+	#contact-right #pending_text p{
+		display: none;
+		color: red;
+		font-style: unset;
+		font-weight:bold;
+	}
+
+	#apply_btn
+	{
+		display: none;
+	}
+

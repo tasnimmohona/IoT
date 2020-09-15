@@ -96,7 +96,7 @@
                         <span>Farming</span>
                      </a>
                   </li>
-                  <li>
+                  <li id="apply_btn">
                     <a href="requestroom.html">
                         <i class="fas fa-blender-phone"></i>
                        <span class="sidebar-active">Apply For Room</span>
@@ -128,7 +128,10 @@
             <!-- form Right -->
             <div class="col-md-12 col-lg-6 col-xl-6 col-sm-12 sol-xs-12  order-0 order-lg-1" data-aos="zoom-in" data-aos-duration="1500">
                <div id="contact-right"style="border:2px solid  #59ac82;">
-                  <form>
+                  <div id="pending_text" class="text-uppercase text-center">
+                     <p>your application is being processed</p>
+                  </div>
+                  <form id="req_form" >
                      <h4>Apply For Room</h4>
                      <p>Please fill out this informations for applying a room</p>
                      <div class="row">
@@ -139,38 +142,38 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                            <div class="form-group">
-                              <input type="email" class="form-control right" id="emailreq"
-                                 placeholder="Email Address...">
+                              <input type="email" class="form-control right" id="emailreq" value=""
+                              readonly>
                            </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-group">
-                               <input type="email" class="form-control right" id="contactreq"
+                               <input type="tex" class="form-control right" id="contactreq"
                                   placeholder="Contact No...">
                             </div>
                          </div>
                         
                         <div class="col-md-12 col-sm-12">
                             <div class="form-group">
-                               <input type="email" class="form-control right" id="agereq"
+                               <input type="number" class="form-control right" id="agereq"
                                   placeholder="Your Age...">
                             </div>
                          </div>
                         <div class="col-md-12 col-sm-12">
                             <div class="form-group">
-                               <input type="email" class="form-control right" id="nidreq"
+                               <input type="text" class="form-control right" id="nidreq"
                                   placeholder="Nid-No...">
                             </div>
                          </div>
                          <div class="col-md-12 col-sm-12">
                             <div class="form-group">
-                               <input type="email" class="form-control right" id="addreq"
+                               <input type="text" class="form-control right" id="addreq"
                                   placeholder="Permanent Address...">
                             </div>
                          </div>
                      </div>
                      <div id="submit-btn">
-                        <a class="btn btn btn-outline-dark btn-submit" id="reqsubmit" type="submit" href="#" title="Submit"
+                        <a class="btn btn btn-outline-dark btn-submit" id="reqsubmit" type="submit"  title="Submit"
                            role="button">Submit</a>
                      </div>
                   </form>
@@ -332,7 +335,7 @@
    <script src="../js/iot.js"></script>
    <!-- firebase -->
    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase.js"></script>
-   <script src="../js/farming.js"></script>
+   <script src="../js/apply.js"></script>
 </body>
 
 </html>

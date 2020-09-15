@@ -13,25 +13,35 @@ firebase.initializeApp(firebaseConfig);
 var Firebase = firebase.database();
 var auth = firebase.auth();
 
-var u_name=document.getElementById("user-name");
+var u_name = document.getElementById("user-name");
 
 //listen for auth status changed
 auth.onAuthStateChanged(user => {
 
+    Firebase.ref('Flats').on('value', function (snapshot) {
+        var user_details = snapshot.val().filter(v => v.email === user.email);
+        //console.log(user_details);
+        if (user_details.length != 0) {
+            
+        } else {
+            document.getElementById("apply_btn").style.display = "initial";
+        }
+    });
+
     Firebase.ref('parking/1').on('value', function (snapshot) {
-        var p=snapshot.val();
+        var p = snapshot.val();
         const value = Object.entries(p);
         //console.log(value);
         value.forEach(v => {
             //console.log(v[0], v[1]);
             const id = v[0].slice(-1);
-            document.querySelector("#compartment_"+id).innerHTML=v[1];
+            document.querySelector("#compartment_" + id).innerHTML = v[1];
         });
     });
-   
+
     //console.log(user);
     if (user) {
-        u_name.innerHTML = user.email ;
+        u_name.innerHTML = user.email;
     }
 });
 
