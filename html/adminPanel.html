@@ -23,11 +23,97 @@
    <!--==Owl Carousel==-->
    <link rel="stylesheet" href="../css/owl.carousel.min.css">
    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <!--==my css==-->
    <link rel="stylesheet" href="../css/iot.css">
+   <link rel="stylesheet" href="./../css//adminPanel.css">
 </head>
 
 <body>
+
+   <!-- pop Up form -->
+   <div class="bg-overlay">
+      <div class="popup-content-container bg-white p-3 rounded" style="border:4px solid  #59ac82;">
+
+         <div class="d-flex text-danger">
+            <i class="ml-auto fa fa-times" onclick="closePopup()"></i>
+         </div>
+
+         <div class="popup-content">
+            <form>
+               <div class="form-group row">
+                  <label for="rfid" class="col-sm-5 col-form-label"> Give RFID card No. For User</label>
+                  <div class="col-sm-7">
+                    <input type="text" class="form-control" id="rfid" value="" placeholder="463678676">
+                  </div> 
+                </div>
+
+               <div class="form-group row">
+                  <label for="room_no" class="col-sm-2 col-form-label">Room No.</label>
+                  <div class="col-sm-10">
+                     <input type="text" readonly class="form-control" id="room_no" value="" placeholder="1">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="name" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                     <input type="text" readonly class="form-control" id="name" value=""
+                        placeholder="Tariqul Islam Rezvee">
+                  </div>
+               </div>
+
+               <div class="form-group row">
+                  <label for="email" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                     <input type="email" readonly class="form-control" id="email" value=""
+                        placeholder="email@example.com">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="phone_number" class="col-sm-2 col-form-label">Phone No</label>
+                  <div class="col-sm-10">
+                     <input type="text" readonly class="form-control" id="phone_number" value=""
+                        placeholder="01815718918">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="age" class="col-sm-2 col-form-label">Age</label>
+                  <div class="col-sm-10">
+                     <input type="number" readonly class="form-control" id="age" value="" placeholder="24">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="nid_no" class="col-sm-2 col-form-label">NID No.</label>
+                  <div class="col-sm-10">
+                     <input type="text" readonly class="form-control" id="nid_no" value="" placeholder="1995256000111">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="address" class="col-sm-4 col-form-label">Permanent Address</label>
+                  <div class="col-sm-8">
+                     <input type="text" readonly class="form-control" id="address" value="" placeholder="dhaka">
+                  </div>
+               </div>
+
+
+               <div class="row">
+                  <div id="submit_btn" class="text-right col-sm-6" onclick="approved();">
+                     <a class="btn btn btn-outline-dark btn-submit  text-uppercase" value="" type="submit" title="Approve"
+                        role="button">Approve</a>
+                  </div>
+
+                  <div id="cancel_btn" class="text-left col-sm-6">
+                     <a class="btn btn btn-outline-dark btn-submit  text-uppercase" value="" role="button" >cencel</a>
+                  </div>
+               </div>
+
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- Pop Up Form -->
+
    <!--==sidebar start==-->
    <div class="page-wrapper chiller-theme">
       <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
@@ -58,50 +144,39 @@
             <div class="sidebar-menu">
                <ul>
                   <li>
-                     <a href="afterloginhomepage.html">
+                     <a href="adminPanel.html">
                         <i class="fa fa-home"></i>
-                        <span>Home</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="afterloginproduct.html">
-                        <i class="fa fa-cart-plus"></i>
-                        <span>Product</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="afterlogincontact.html">
-                        <i class="fa fa-phone"></i>
-                        <span>Contact</span>
+                        <span class="sidebar-active">Home</span>
                      </a>
                   </li>
                   <li class="header-menu">
                      <span>Catagories</span>
                   </li>
                   <li>
-                     <a href="afterloginroom.html">
-                        <i class="fa fa-hotel"></i>
-                        <span class="sidebar-active">Room</span>
+                     <a href="#pending">
+                        <i class="fa fa-comment-alt"></i>
+                        <span>Pending Requests</span>
                      </a>
                   </li>
                   <li>
-                     <a href="afterloginparking.html">
+                     <a href="">
+                        <i class="fa fa-hotel"></i>
+                        <span>Room</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
                         <i class="fa fa-car"></i>
                         <span>Parking</span>
                      </a>
                   </li>
                   <li>
-                     <a href="afterloginfarming.html">
+                     <a href="">
                         <i class="fa fa-tree"></i>
                         <span>Farming</span>
                      </a>
                   </li>
-                  <li>
-                     <a id="apply_btn" href="requestroom.html">
-                         <i class="fas fa-blender-phone"></i>
-                        <span>Apply For Room</span>
-                     </a>
-                  </li>
+
                   <li>
                      <br>
                      <br>
@@ -137,203 +212,32 @@
    </section>
    <!--==bg end==-->
    <!--==main content start==-->
-   <section id="room">
-      <div class="container text-center">
-         <div class="room">
-            <div class="logincommon-header">
-               <p class="lead">Smart things can teach your home
-                  a few new tricks and make life a little bit easier.
-               </p>
-            </div>
-         </div>
-         <!--==rfid start==-->
-         <div class="rfid" id="rfid">
-            <ul class="list-group list-group-horizontal text-center">
-               <li class="list-group-item" id="rfidcard">Card No</li>
-               <li class="list-group-item" id="rfidcard-number">**********</li>
-            </ul>
-         </div>
-         <!--= rfid end==-->
-         <div class="row" style="overflow-x: hidden">
-            <!--==light==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-               <a href="#box-1" onclick="ligtControl(event);">
-                  <div class="room-box1" data-aos="fade-right" data-aos-duration="1000" id="box-1">
-                     <img src="../images/icons8-reflector-bulb-80.png" class="animate__animated animate__flash 
-                           animate__infinite	infinite" style="animation-duration:5s;" alt="light">
-                     <h2>Light</h2>
-                     <h5 id="light" class="text-uppercase">ON/OFF</h5>
-                  </div>
-               </a>
-            </div>
-            <!--==fan==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-               <a href="#box-2" onclick="fanControl(event);">
-                  <div class="room-box2" data-aos="flip-left" data-aos-duration="1000" id="box-2">
-                     <img src="../images/icons8-fan-80.png" class="animate__animated animate__rotateIn
-                           animate__infinite	infinite" style="animation-duration:2s;" alt="fan">
-                     <h2>Fan</h2>
-                     <h5 id="fan" class="text-uppercase">on/off</h5>
-                  </div>
-               </a>
-            </div>
-            <!--==pump==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-               <a href="#box-3" onclick="pumpControl(event);">
-                  <div class="room-box3" data-aos="fade-left" data-aos-duration="1000" id="box-3">
-                     <img src="../images/icons8-pump-80.png" class="animate__animated animate__bounce
-                           animate__infinite	infinite" style="animation-duration:5s;" alt="pump">
-                     <h2>Pump</h2>
-                     <h5 id="pump"  class="text-uppercase">ON/OFf</h5>
-                  </div>
-               </a>
-            </div>
-            <!--==Temperature==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-               <div class="room-box4" data-aos="flip-up" data-aos-duration="1000" id="box-4">
-                  <img src="../images/icons8-temperature-sensitive-80.png" class="animate__animated animate__tada
-                        animate__infinite	infinite" style="animation-duration:6s;" alt="temperature">
-                  <h2>Temperature</h2>
-                  <h5 id="temperature">29°C</h5>
-               </div>
-            </div>
-            <!--==Humidity==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-               <div class="room-box5" data-aos="zoom-in" data-aos-duration="1200" id="box-5">
-                  <img src="../images/icons8-partly-cloudy-day-80.png" class="animate__animated animate__shakeX
-                        animate__infinite	infinite" style="animation-duration:12s;" alt="humidity">
-                  <h2>Humidity</h2>
-                  <h5 id="Humidity">75%</h5>
-               </div>
-            </div>
-            <!--==Smoke==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-4 col-xl-4">
-               <div class="room-box6" data-aos="flip-down" data-aos-duration="1000" id="box6">
-                  <img src="../images/icons8-smoke-80.png" class="animate__animated animate__heartBeat
-                        animate__infinite	infinite" style="animation-duration:5s;" alt="smoke">
-                  <h2>Smoke</h2>
-                  <h5 id="Smoke">Detected</h5>
-               </div>
-            </div>
-            <!--==gas==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 col-xl-6">
-               <div class="room-box7" data-aos="fade-right" data-aos-duration="1000" id="box-7">
-                  <img src="../images/icons8-gas-industry-80.png" class="animate__animated animate__jello
-                        animate__infinite	infinite" style="animation-duration:5s;" alt="gas">
-                  <h2>Gas</h2>
-                  <h5 id="Gas">Detected</h5>
-               </div>
-            </div>
-            <!--==flame==-->
-            <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 col-xl-6">
-               <div class="room-box8" data-aos="fade-left" data-aos-duration="1000" id="box-8">
-                  <img src="../images/icons8-fire-80.png" class="animate__animated animate__flash
-                        animate__infinite	infinite" style="animation-duration:5s;" alt="flame">
-                  <h2>Flame</h2>
-                  <h5 id="Flame">Not Found</h5>
-               </div>
-            </div>
-         </div>
+   <section id="pending">
+      <div class="w3-container">
+         <h2 class="text-center text-uppercase" style="color: red; margin: 20px;">pending requests</h2>
+
+         <table class="w3-table-all table_data">
+            <thead>
+               <tr class="w3-green">
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
+                  <th>Action</th>
+               </tr>
+            </thead>
+            <!-- <tr>
+               <td>Jill</td>
+               <td>Smith</td>
+               <td>50</td>
+               <td class="text-center">
+                  <button class="btn btn-outline-success  w-100 check" onclick="checkPopup(value)" value="54">check</button>
+               </td>
+            </tr> -->
+            
+         </table>
       </div>
    </section>
    <!--= main content end=-->
-   <!--==footer  start==-->
-   <section id="footer">
-      <div class="footer-overlay"></div>
-      <div class="container">
-         <div class="footer">
-            <div class="row" style="overflow-x:hidden" data-aos="fade-down" data-aos-duration="1000">
-               <!--=footer left=-->
-               <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4 col-xs-12">
-                  <div class="footer-left  mb-5">
-                     <h4>Other Pages</h4>
-                     <div class="gap-10"></div>
-                     <ul class="page-catagories">
-                        <a href="afterloginhomepage.html">
-                           <li>Home</li>
-                        </a>
-                        <hr class="footer-horizontal">
-                        <a href="afterloginproduct.html">
-                           <li>Product</li>
-                        </a>
-                        <hr class="footer-horizontal">
-                        <a href="afterlogincontact.html">
-                           <li>Contact</li>
-                        </a>
-                        <hr class="footer-horizontal">
-                     </ul>
-                     <div class="gap-20"></div>
-                     <h4>Catagories</h4>
-                     <div class="gap-10"></div>
-                     <ul class="page-catagories2">
-                        <a href="afterloginroom.html">
-                           <li class="d-inline mx-2">Room</li>
-                        </a>
-                        <a href="afterloginfarming.html">
-                           <li class="d-inline  mx-2">Farming</li>
-                        </a>
-                        <a href="afterloginparking.html">
-                           <li class="d-inline  mx-2">Parking</li>
-                        </a>
-                     </ul>
-                  </div>
-               </div>
-               <!--=footer middle=-->
-               <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4 col-xs-12 gal">
-                  <div class="footer-middle  mb-5">
-                     <h4>Our moments and relevant</h4>
-                     <div class="gap-10"></div>
-                     <div class="gallery img-responsive ">
-                        <a href="../images/flicker (1).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (1).jpg" alt="Office"></a>
-                        <a href="../images/flicker (2).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (2).jpg" alt="Office"></a>
-                        <a href="../images/flicker (3).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (3).jpg" alt="Office"></a>
-                        <a href="../images/flicker (4).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (4).jpg" alt="Office"></a>
-                        <a href="../images/flicker (5).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (5).jpg" alt="Office"></a>
-                        <a href="../images/flicker (6).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (6).jpg" alt="Office"></a>
-                        <a href="../images/flicker (7).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (7).jpg" alt="Office"></a>
-                        <a href="../images/flicker (8).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (8).jpg" alt="Office"></a>
-                        <a href="../images/flicker (9).jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker (9).jpg" alt="Office"></a>
-                        <a href="../images/flicker9.jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker9.jpg" alt="Office"></a>
-                        <a href="../images/flicker10.jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker10.jpg" alt="Office"></a>
-                        <a href="../images/flicker11.jpg" data-lightbox="mygallery" data-title="Tinker"><img
-                              src="../images/flicker11.jpg" alt="Office"></a>
-                     </div>
-                  </div>
-               </div>
-               <!--=footer right=-->
-               <div class="col-md-12 col-sm-12 col-lg-4 col-xl-4 col-xs-12">
-                  <div class="footer-right mb-5">
-                     <h4>About US</h4>
-                     <h1>Tinker</h1>
-                     <p>We specialize in home automation through smart
-                        technology solutions that make your space connected, intuitive and safe.
-                        We are an experienced package and always ready to serve you.
-                        Tinker simplifies your problems and solves it instantly.
-                     </p>
-                     <div class="gap-30"></div>
-                     <p>Basically we are attempting to live a modern and secured life
-                        with the use of modern technologies and make accurate use of our properties.
-                        So,we works for make a home which will be green enough with the touch of farming
-                        and comfortable and safe with all the advance technologies and low costed comparatively.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!--==footer  end==-->
    <!--==copyright  start==-->
    <section id="copyright">
       <div class="container text-center">
@@ -388,7 +292,7 @@
    <script src="../js/iot.js"></script>
    <!-- firebase -->
    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase.js"></script>
-   <script src="../js/user_room.js"></script>
+   <script src="./../js/admin.js"></script>
 </body>
 
 </html>

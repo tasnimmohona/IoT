@@ -1,0 +1,52 @@
+.bg-overlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    display: none;
+}
+.bg-overlay .row{
+    margin: auto!important;
+}
+.popup-content-container{
+    width: 95%;
+    max-width: 767px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup-content-container i {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.popup-content-container i:hover {
+    cursor: pointer;
+}
+
+.popup-content .row label{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    /* text-align: right; */
+}
+
+#pending {
+    min-height: 720px;
+    margin-bottom: 100px;
+}
+
+.popup-content .form-group {
+    margin-bottom: 10px !important;
+}
+
+#pending button {
+    border-radius: 25px !important;
+}
+#pending tr td,#pending tr th {
+    border: green 2px solid;
+}
