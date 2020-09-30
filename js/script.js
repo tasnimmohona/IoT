@@ -22,7 +22,7 @@ auth.onAuthStateChanged(user => {
     if (user) {
         if (window.location.pathname == "/IoT/index.html" || window.location.pathname == "/index.html" || window.location.pathname == "/IoT/" || window.location.pathname == "/" ) {
             if (user.email == "admin@gmail.com") {
-                
+                window.location = "html/adminPanel.html";
             } else {
                 window.location = "html/afterloginhomepage.html";
             }
@@ -32,7 +32,7 @@ auth.onAuthStateChanged(user => {
             window.location.pathname == "/html/signup.html" || window.location.pathname == "/html/product-detail.html" ||
             window.location.pathname == "/html/loginformuser.html" || window.location.pathname == "/html/contact.html") {
             if (user.email == "admin@gmail.com") {
-
+                window.location = "adminPanel.html";
             } else {
                 window.location = "afterloginhomepage.html";
             }
@@ -94,7 +94,7 @@ function loginAdmin(e) {
 
     if (email == "admin@gmail.com") {
         auth.signInWithEmailAndPassword(email, password).then(function (e) {
-            window.location = "afterloginhomepage.html";
+            window.location = "adminPanel.html";
         }).catch(function (error) {
             var errorMessage = error.message;
             alert(errorMessage);

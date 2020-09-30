@@ -1351,6 +1351,17 @@ ul.page-catagories a:hover li {
 	margin-top: 5px;
 	color: white;
 }
+.btn-cancel {
+	background-color: #1db891;
+	padding: 6px 35px;
+	border-radius: 25px;
+	font-size: 20px;
+	margin-top: 5px;
+	color: white;
+}
+.btn-cancel:hover {
+	background-color: red;
+}
 
 .btn-submit:hover {
 	background-color: #59ac82;
@@ -1365,7 +1376,7 @@ ul.page-catagories a:hover li {
 
 /*============================================
 	breadcrumb
-	===============================================*/
+===============================================*/
 
 .breadcrumb {
 	display: block;

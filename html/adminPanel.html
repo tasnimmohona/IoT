@@ -23,6 +23,10 @@
    <!--==Owl Carousel==-->
    <link rel="stylesheet" href="../css/owl.carousel.min.css">
    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+   <!-- CSS -->
+   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+   <!-- Default theme -->
+   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
 
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <!--==my css==-->
@@ -42,12 +46,13 @@
 
          <div class="popup-content">
             <form>
+                <p class="text-center" style="color: red;"></p>
                <div class="form-group row">
                   <label for="rfid" class="col-sm-5 col-form-label"> Give RFID card No. For User</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control" id="rfid" value="" placeholder="463678676">
-                  </div> 
-                </div>
+                     <input type="text" class="form-control" id="rfid" value="" placeholder="463678676">
+                  </div>
+               </div>
 
                <div class="form-group row">
                   <label for="room_no" class="col-sm-2 col-form-label">Room No.</label>
@@ -99,12 +104,12 @@
 
                <div class="row">
                   <div id="submit_btn" class="text-right col-sm-6" onclick="approved();">
-                     <a class="btn btn btn-outline-dark btn-submit  text-uppercase" value="" type="submit" title="Approve"
-                        role="button">Approve</a>
+                     <a class="btn btn btn-outline-dark btn-submit  text-uppercase" value="" type="submit"
+                        title="Approve" role="button">Approve</a>
                   </div>
 
-                  <div id="cancel_btn" class="text-left col-sm-6">
-                     <a class="btn btn btn-outline-dark btn-submit  text-uppercase" value="" role="button" >cencel</a>
+                  <div id="cancel_btn" class="text-left col-sm-6" onclick="cancelApplication()">
+                     <a class="btn btn-cancel btn-outline-danger text-uppercase" value="" role="button">Delete</a>
                   </div>
                </div>
 
@@ -158,7 +163,7 @@
                         <span>Pending Requests</span>
                      </a>
                   </li>
-                  <li>
+                  <!-- <li>
                      <a href="">
                         <i class="fa fa-hotel"></i>
                         <span>Room</span>
@@ -175,7 +180,7 @@
                         <i class="fa fa-tree"></i>
                         <span>Farming</span>
                      </a>
-                  </li>
+                  </li> -->
 
                   <li>
                      <br>
@@ -233,7 +238,7 @@
                   <button class="btn btn-outline-success  w-100 check" onclick="checkPopup(value)" value="54">check</button>
                </td>
             </tr> -->
-            
+
          </table>
       </div>
    </section>
@@ -278,6 +283,9 @@
       </div>
    </section>
    <!--==copyright  end==-->
+
+   <!-- JavaScript -->
+   <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
    <!--==jquery==-->
    <script src="../js/jquery.min.js"></script>
    <!--==aos.js==-->
